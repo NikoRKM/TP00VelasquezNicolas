@@ -1,4 +1,4 @@
-package ar.edu.unju.edm;
+package ar.edu.unju.edm.model;
 
 import org.springframework.stereotype.Component;
 
@@ -17,49 +17,43 @@ public class Calculator {
 			
 		}
 		
-		public Calculator(int x,int y) {
-			
-			this.x = x;
-			this.y = y;
-			
-		}
 		
 		//Basics operations
 		
 		public int sum() {
 		
-			return this.x + this.y;	
+			return x+y;	
 		
 		}
 		
 		public int subtract() {
 			
-			return this.x -  this.y;
+			return x-y;
 			
 		}
 
 		public int multiply() {
 			
-			return this.x * this.y;	
+			return x*y;	
 		
 		}
 		
 		public double divide() {
 			
-			if(y != 0) return this.x / this.y;
+			if(y != 0) return x/y;
 			else return 0;
 			
 		}
 		
 		public double power() {
 			
-			return Math.pow(this.x, this.y);
+			return Math.pow(x, y);
 			
 		}
 		
 		public double root() {
 			
-			return Math.pow(this.x, Math.pow(this.y, -1));
+			return Math.pow(x, Math.pow(y, -1));
 			
 		}
 		

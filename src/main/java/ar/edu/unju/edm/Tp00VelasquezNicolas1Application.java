@@ -3,6 +3,8 @@ package ar.edu.unju.edm;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import ar.edu.unju.edm.model.Calculator;
+
 @SpringBootApplication
 public class Tp00VelasquezNicolas1Application {
 
@@ -16,7 +18,7 @@ public class Tp00VelasquezNicolas1Application {
 		//int x = System.console().readLine();
 		
 		calculator.setX(100);
-		calculator.setY(2);
+		calculator.setY(3);
 		
 		System.out.println("The sum is: "+ calculator.sum());
 				
